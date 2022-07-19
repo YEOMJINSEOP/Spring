@@ -19,19 +19,29 @@ Spring Boot
 
 
 (참고)URI란?
+
 URL(Uniform Resource Locator) : 자원을 '서버에 있는 폴더' 위치로 찾아간다.
+
 URI(Uniform Resource Identifier) : 위치로 찾아가게 하는 것이 아니라, id로 mapping시켜 놓는다. 따라서 사용자에게 파일 이름, 위치 노출이 되지 않는다.(그래서 컨트롤러를 만든다는 말은 곧 URI를 만든다는 말.)
+
 단어에서 알 수 있듯, 위치와 식별자라는 차이가 있다.
 예를 들어 http://opentutorials.org:3000/main?id=HTML&page=12 라는 주소가 있다고 하자.
+
 여기서 http://opentutorials.org:3000/main 까지는 URL이다.(URI이기도 한)
+
 그리고 http://opentutorials.org:3000/main?id=HTML&page=12 이것은 URI라고 할 수 있다.(URL은 아닌)
+
 다시 말해 URL은 자원의 '위치'를 나타내 주는 것이고, URI는 자원의 '식별자'이다.
+
 ?id=HTML&page=12 이 부분은 위치를 나타내는 것이 아닌 id 값이 HTML이고, page가 12인 것을 나타내주는 식별하는 부분이기 때문이다.
 
 
 - controller를 왜 쓰는가?
+
 대규모 서비스로 갈수록 처리해야할 서비스들이 많아지는데, 이를 하나의 클래스에서 몰아서 처리할 게 아니라 
+
 controlle라는 중간 제어자 역할을 하는 것을 만들어서 A 요청에 대한 것은 A-controller가 맡아 필요한 로직처리를 위한 서비스를 호출하게 된다.
+
 controller는 MVC 패턴에 포함되는 것인데, Model View Controller의 역할에 따라 설계하고 코딩하면 주먹구구식으로 개발할 때 보다 개발비용이나 유지보수비용이 대폭 줄어든다. 역할 분담이 핵심이다.
 
 출처 

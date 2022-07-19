@@ -8,6 +8,7 @@ Spring Boot
 
 ![img](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2F6QO4D%2FbtrbhYYpWHL%2FjtSpTqBF8UbUbkili88bVk%2Fimg.png)
 
+
 - controller란 무엇인가?
 
 사용자의 요청이 진입하는 지점(entry point)
@@ -16,6 +17,7 @@ Spring Boot
 1. 사용자들이 웹브라우저에 'URI'로 요청을 보내면,
 2. URI가 매핑된 컨트롤러의 메소드가 실행된다.
 3. 요청에 대한 응답(View)을 반환한다.
+
 
 
 (참고)URI란?
@@ -34,6 +36,7 @@ URI(Uniform Resource Identifier) : 위치로 찾아가게 하는 것이 아니�
 다시 말해 URL은 자원의 '위치'를 나타내 주는 것이고, URI는 자원의 '식별자'이다.
 
 ?id=HTML&page=12 이 부분은 위치를 나타내는 것이 아닌 id 값이 HTML이고, page가 12인 것을 나타내주는 식별하는 부분이기 때문이다.
+
 
 
 - controller를 왜 쓰는가?

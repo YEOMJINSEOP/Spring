@@ -2,14 +2,17 @@ package hello.hellospring.service;
 
 import hello.hellospring.domain.Member;
 import hello.hellospring.repository.MemberRepository;
-import hello.hellospring.repository.MemoryMemberRepository;
 
 import java.util.List;
 import java.util.Optional;
 
 public class MemberService {
+// class에 커서 올리고 command + shift + t 누르면 test 만들 수 있는 단축키.
+    private final MemberRepository memberRepository;
 
-    private final MemberRepository memberRepository = new MemoryMemberRepository();
+    public MemberService(MemberRepository memberRepository){
+        this.memberRepository = memberRepository;
+    }
     // interface를 new로 생성할 수는 없으므로 구현 인스턴스로 생성한다.
 
     /**

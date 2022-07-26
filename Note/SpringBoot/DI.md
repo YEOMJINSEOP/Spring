@@ -170,6 +170,18 @@ IoC 사용 목적
 
 
 -----
+
+@Autowired란?
+필요한 의존 객체의 "타입"에 해당하는 빈을 찾아 주입한다.
+
+1. 생성자
+2. setter
+3. 필드
+
+위의 세 가지 경우에 Autowired를 사용할 수 있다.
+Autowired는 기본값이 true이기 때문에 의존성 주입을 할 대상을 찾이 못한다면 애플리케이션 구동에 실패한다.
+
+-----
 자료 및 내용 출처: 
 Bean 정리: https://velog.io/@gillog/Spring-Bean-%EC%A0%95%EB%A6%AC
 DI, IoC 정리: https://velog.io/@gillog/Spring-DIDependency-Injection

@@ -1,4 +1,4 @@
-Spring Bean이란?\n
+Spring Bean이란?/n
 Spring IoC container가 관리하는 자바 객체, Spring Bean Container에 존재하는 객체를 말한다.
 
 Spring IoC(Inversion of Control) Container에 의해 인스턴스화, 관리, 생성된다.

@@ -5,9 +5,11 @@ import hello.hellospring.repository.MemberRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import javax.transaction.Transactional;
 import java.util.List;
 import java.util.Optional;
 @Service
+@Transactional
 public class MemberService {
 // class에 커서 올리고 command + shift + t 누르면 test 만들 수 있는 단축키.
     private final MemberRepository memberRepository;

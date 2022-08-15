@@ -16,19 +16,34 @@ import org.springframework.context.annotation.Configuration;
 //@Configuration 설정정보
 public class AppConfig {
 
+    //@Bean memberService -> new MemoryMemberRepository()
+    //@Bean orderService -> new MemoryMemberRepository()
+
+    //순서는 보장 x
+    // call AppConfig.memberService
+    // call AppConfig.memberRepository
+
+    // call AppConfig.orderService
+    // call AppConfig.memberRepository
+
+    // call AppConfig.memberRepository
+
     @Bean
     //@Bean을 각 메서드에 붙이면 Spring Container에 등록이 된다.
     public MemberService memberService(){
+        System.out.println("call AppConfig.memberService");
         return new MemberServiceImpl(memberRepository());
     }
 
     @Bean
     public MemberRepository memberRepository() {
+        System.out.println("call AppConfig.memberRepository");
         return new MemoryMemberRepository();
     }
 
     @Bean
     public OrderService orderService(){
+        System.out.println("call AppConfig.orderService");
         return new OrderServiceImpl(memberRepository(), discountPolicy());
     }
 

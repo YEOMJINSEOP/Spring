@@ -12,4 +12,4 @@ Command + Shif + T : Test class 껍데기 자동 생성
 
 Command + E : 과거 기록 조회, 돌아가기
 
-
+Control + O : 관련 Method 불러오기, 또는 Override할 Method 불러오기 

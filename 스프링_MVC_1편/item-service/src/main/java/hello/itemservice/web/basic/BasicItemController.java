@@ -23,12 +23,19 @@ public class BasicItemController {
         this.itemRepository = itemRepository;
     }
 
+    /**
+     * 상품 목록
+     */
     @GetMapping
     public String items(Model model){
         List<Item> items = itemRepository.findAll();
         model.addAttribute("items", items);
         return "basic/items";
     }
+
+    /**
+     * 상품 조회
+     */
 
     @GetMapping("/{itemId}")
     public String item(@PathVariable long itemId, Model model){
